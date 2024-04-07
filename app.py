@@ -3,7 +3,8 @@ import json
 from datetime import datetime
 
 import requests
-from flask import Flask, request
+from flask import Flask
+from flask import request
 
 os.environ.get()
 
@@ -98,5 +99,5 @@ def log(msg, *args, **kwargs):
 
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 8080))
     app.run(host='0.0.0.0', port=port)
